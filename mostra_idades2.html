@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+function pulaLinha () {
+    document.write("<br>");
+}
+
+function mostra (anoInicial, anoFinal, intervaloGerações, diferençaFinalInicial, gerações) {
+    document.write("Desde " + anoInicial + " até " + anoFinal +", se passaram " + diferençaFinalInicial + " anos. O número de gerações nesse intervalo foi de " + Math.round(gerações) + " gerações.");
+    pulalinha ()    
+}
+
+var anoInicial = 1500;
+var anoFinal = 2024;
+var intervaloGerações = 28; 
+var diferençaFinalInicial = anoFinal - anoInicial; 
+var gerações = diferençaFinalInicial / intervaloGerações;
+
+mostra (anoInicial, anoFinal, intervaloGerações, diferençaFinalInicial, gerações)
+
+</script>
